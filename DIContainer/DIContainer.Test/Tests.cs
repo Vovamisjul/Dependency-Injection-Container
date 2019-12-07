@@ -122,7 +122,6 @@ namespace DIContainer.Test
             config.Register<Interface1, Class1If1>();
             config.Register<IEnumerable<Interface1>, List<Interface1>>();
             DependencyProvider provider = new DependencyProvider(config);
-
             IEnumerable<Interface1> item = null;
 
             Assert.DoesNotThrow(() => provider.ValidateConfig());
